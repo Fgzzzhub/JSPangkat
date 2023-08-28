@@ -10,11 +10,18 @@ function submitAngka() {
   var hasil = document.getElementById("hasil");
   var hasilPangkat = inputAngka ** inputAngka2;
 
+  // if (inputAngka !== "" && inputAngka2 !== "") {
+  //   hasil.innerHTML = "Anda memasukkan angka: " + inputAngka + "<br>";
+  //   hasil.innerHTML += "Dan akan dipangkatkan menjadi: " + inputAngka2 + "<br>";
+  //   hasil.innerHTML += "Maka hasilnya adalah: " + hasilPangkat;
+  // } else {
+  //   hasil.innerHTML = "Silakan masukkan angka terlebih dahulu.";
+  // }
   if (inputAngka !== "" && inputAngka2 !== "") {
-    hasil.innerHTML = "Anda memasukkan angka: " + inputAngka + "<br>";
-    hasil.innerHTML += "Dan akan dipangkatkan menjadi: " + inputAngka2 + "<br>";
-    hasil.innerHTML += "Maka hasilnya adalah: " + hasilPangkat;
+    hasil.innerHTML = "<p style='text-align: center;'>Anda memasukkan angka: " + inputAngka + "<br>";
+    hasil.innerHTML += "<p style='text-align: center;'>Dan akan dipangkatkan menjadi: " + inputAngka2 + "<br>";
+    hasil.innerHTML += "<p style='text-align: center;'>Maka hasilnya adalah: " + hasilPangkat + "</p>";
   } else {
-    hasil.innerHTML = "Silakan masukkan angka terlebih dahulu.";
+    hasil.innerHTML = "<p style='text-align: center;'>Silakan masukkan angka terlebih dahulu.</p>";
   }
 }
