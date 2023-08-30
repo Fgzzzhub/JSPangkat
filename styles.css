@@ -1,10 +1,11 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background-color: #333;
 }
 
 .pembungkus {
   margin: auto;
-  background-color: wheat;
   width: 800px;
   padding: 100px;
 }
